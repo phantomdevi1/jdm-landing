@@ -1,0 +1,159 @@
+* {
+    transition: 0.3s;
+}
+body{
+    margin: 0 auto;
+    
+    font-family: Roboto;
+    background: url(https://sportishka.com/uploads/posts/2022-04/1651168145_61-sportishka-com-p-yaponskie-tachki-mashini-krasivo-foto-67.jpg) fixed;
+    
+    
+}
+.center{
+    display: flex;
+    justify-content: center;
+}
+header{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 400px;
+    height: 80px;
+    color: white;
+    
+    --border-size: 3px;
+  --border-angle: 0turn;
+  background-image: conic-gradient(from var(--border-angle),
+   #213, #112 50%, #213), conic-gradient(from var(--border-angle), transparent 20%, #08f, #f03);
+  background-size: calc(100% - (var(--border-size) * 2)) calc(100% - (var(--border-size) * 2)), cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-animation: bg-spin 3s linear infinite;
+          animation: bg-spin 3s linear infinite;
+}
+@-webkit-keyframes bg-spin {
+    to {
+      --border-angle: 1turn;
+    }
+  }
+  @keyframes bg-spin {
+    to {
+      --border-angle: 1turn;
+    }
+  }
+  @property --border-angle {
+    syntax: "<angle>";
+    inherits: true;
+    initial-value: 0turn;
+  }
+
+
+.dropdown{
+    margin: 20px;
+  }
+  .dropdown__header{
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    cursor: pointer;
+    font-family: Roboto;
+    color: white;
+    background-color: #112;
+    border-radius: 10px;
+    font-size: 30px;
+    font-weight: 500;
+    cursor: pointer;
+    padding-top: 5px;
+  }
+  .dropdown__header:hover{
+    box-shadow: 0 0 5px 2px #213;
+    transform: scale(1.1);
+  }
+  .dropdown__body{
+    margin-top: 5px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  .dropdown__body img{
+    border-radius: 10px;
+    margin: 5px;
+    width: 200px;
+  }
+  .dropdown__body img:hover{
+    transform: scale(1.05);
+  }
+
+  .write__otziv{
+    margin-top: 60px;
+   width: 600px;
+   min-height: 200px;
+    color: white;
+    background-color: #112;
+    border-radius: 10px;
+  }
+  .margin__otziv{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .margin__otziv p{
+    font-size: 26px;
+  }
+  .margin__otziv button{
+    width: 200px;
+    height: 80px;
+    margin-top: 10px;
+  }
+  #otziv_content{
+    margin-top: 10px;
+  }
+  .margin__otziv-btn button{
+    background: none;
+    color: white;
+    font-size: 20px;
+    border: none;
+    --border-size: 3px;
+    --border-angle: 0turn;
+    background-image: conic-gradient(from var(--border-angle),
+     #213, #112 50%, #213), conic-gradient(from var(--border-angle), transparent 20%, #08f, #f03);
+    background-size: calc(100% - (var(--border-size) * 2)) calc(100% - (var(--border-size) * 2)), cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-animation: bg-spin 3s linear infinite;
+            animation: bg-spin 3s linear infinite;
+  }
+  .margin__otziv-btn button:hover{
+    transform: scale(1.15);
+  }
+  .margin__otziv-btn button:active{
+    box-shadow: 0 0 5px 2px white;
+    transition: 0s
+  }
+  .otziv__vivod{
+    margin-top: 20px;
+    margin-bottom: 50px;
+    color: white;
+    width: 800px;
+    min-height: 200px;
+    --border-size: 3px;
+    --border-angle: 0turn;
+    background-image: conic-gradient(from var(--border-angle),
+     #213, #112 50%, #213), conic-gradient(from var(--border-angle), transparent 20%, #08f, #f03);
+    background-size: calc(100% - (var(--border-size) * 2)) calc(100% - (var(--border-size) * 2)), cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-animation: bg-spin 3s linear infinite;
+            animation: bg-spin 3s linear infinite;
+  }
+  .concret_otziv{
+    border-radius: 10px;
+      margin: 10px;
+      width: 600px;
+      min-height: 100px;
+      border: 1px solid white;
+  }
